@@ -54,7 +54,7 @@ public class LatinSquare
 	/*
 	 * Check if the row is a valid for a Latin square
 	 */
-	public boolean isRowLatin(int i)
+	public boolean isRowLatin(int row)
 	{
 		return false;
 	}
@@ -62,7 +62,7 @@ public class LatinSquare
 	/*
 	 * Check if the column is valid for a Latin square
 	 */
-	public boolean isColumnLatin(int i)
+	public boolean isColumnLatin(int col)
 	{
 		return false;
 	}
