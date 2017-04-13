@@ -6,7 +6,9 @@ public class LatinSquare
 	// Matrix that will be used to hold the Latin square matrix data
 	Matrix M;
 	
-	// Read a file as a square matrix
+	/*
+	 * Read a file as a square matrix
+	 */
 	public LatinSquare(String filename) throws IOException
 	{
 		// Open the file
@@ -40,25 +42,34 @@ public class LatinSquare
         reader.close();
 	}
 	
-	// String representation which is just the matrix representation
+	/*
+	 * (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
 	public String toString()
 	{
 		return M.toString();
 	}
 	
-	// Check if the row is a valid for a Latin square
+	/*
+	 * Check if the row is a valid for a Latin square
+	 */
 	public boolean isRowLatin(int i)
 	{
 		return false;
 	}
 	
-	// Check if the column is valid for a Latin square
+	/*
+	 * Check if the column is valid for a Latin square
+	 */
 	public boolean isColumnLatin(int i)
 	{
 		return false;
 	}
 	
-	// Check if the matrix is a Latin square
+	/*
+	 * Check if the matrix is a Latin square
+	 */
 	public boolean isLatin()
 	{
 		return false;

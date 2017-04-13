@@ -10,7 +10,9 @@ class Matrix
 	// Matrix data - stored as a 
 	private double data[];
 	
-	// Constructor that initializes the members and creates an array of double
+	/*
+	 * Constructor that initializes the members and creates an array of double
+	 */
 	public Matrix(int m, int n)
 	{
 		this.m = m;
@@ -18,8 +20,26 @@ class Matrix
 		data = new double[m*n];
 	}
 	
-	// Get the size of the matrix. It is returned as an array of two integers
-	// of size m by n
+	/*
+	 * Returns the number of rows in the matrix
+	 */
+	public int getNRows()
+	{
+		return m;
+	}
+	
+	/*
+	 * Returns the number of columns in the matrix
+	 */
+	public int getNColumns()
+	{
+		return n;
+	}
+	
+	/*
+	 * Get the size of the matrix. It is returned as an array of two integers
+	 * of size m by n
+	 */
 	public int[] getSize()
 	{
 		int[] matrix_size = new int[2];
@@ -28,7 +48,9 @@ class Matrix
 		return matrix_size;
 	}
 	
-	// Check that the parameters are inside the matrix dimensions
+	/*
+	 * Check that the parameters are inside the matrix dimensions
+	 */
 	private void checkParameters(int i, int j)
 	{
 
@@ -38,7 +60,9 @@ class Matrix
 		}
 	}
 	
-	// Getter and setter for data in the matrix
+	/*
+	 * Getter and setter for data in the matrix
+	 */
 	public double getMatrixValue(int i, int j)
 	{
 		// Make sure that the value is in the matrix before sending
@@ -49,7 +73,9 @@ class Matrix
 		return data[i*n + j];
 	}
 	
-	// Set the value for the matrix
+	/*
+	 * Set the value for the matrix
+	 */
 	public void setMatrixValue(int i, int j, double value)
 	{
 		// Make sure that the value is in the matrix before sending
@@ -59,7 +85,9 @@ class Matrix
 		data[i*n + j] = value;
 	}
 	
-	// For printing out the matrix
+	/*
+	 * For printing out the matrix
+	 */
 	public String toString()
 	{
 		String s = "";
