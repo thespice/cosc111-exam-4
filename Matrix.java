@@ -8,7 +8,7 @@ class Matrix
 	// Size of the matrix
 	private int m, n;
 	// Matrix data - stored as a 
-	private double data[];
+	private int data[];
 	
 	/*
 	 * Constructor that initializes the members and creates an array of double
@@ -17,7 +17,7 @@ class Matrix
 	{
 		this.m = m;
 		this.n = n;
-		data = new double[m*n];
+		data = new int[m*n];
 	}
 	
 	/*
@@ -63,7 +63,7 @@ class Matrix
 	/*
 	 * Getter and setter for data in the matrix
 	 */
-	public double getMatrixValue(int i, int j)
+	public int getMatrixValue(int i, int j)
 	{
 		// Make sure that the value is in the matrix before sending
 		// the value
@@ -76,7 +76,7 @@ class Matrix
 	/*
 	 * Set the value for the matrix
 	 */
-	public void setMatrixValue(int i, int j, double value)
+	public void setMatrixValue(int i, int j, int value)
 	{
 		// Make sure that the value is in the matrix before sending
 		// the value
@@ -96,7 +96,7 @@ class Matrix
 			s += "[";
 			for (int j=0; j<m; j++)
 			{
-				s += Double.toString(data[i*n+j]) + " ";
+				s += Integer.toString(data[i*n+j]) + " ";
 			}
 			s += "]\n";
 		}

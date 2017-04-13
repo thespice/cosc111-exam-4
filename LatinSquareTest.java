@@ -1,11 +1,8 @@
 import static org.junit.Assert.*;
-
 import java.io.IOException;
 import org.junit.Test;
-
 public class LatinSquareTest
-{
-
+{	
 	/*
 	 * Test0 is valid Latin square. Check all the columns and rows and
 	 * that the matrix itself is a Latin square.

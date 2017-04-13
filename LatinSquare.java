@@ -31,7 +31,7 @@ public class LatinSquare
             // Set the matrix from the line
             for (int j=0; j<parts.length; j++)
             {
-            	double value = Double.parseDouble(parts[j]);
+            	int value = Integer.parseInt(parts[j]);
                 M.setMatrixValue(i, j, value);
             }
             
