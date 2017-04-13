@@ -4,6 +4,38 @@ import org.junit.Test;
 public class LatinSquareTest
 {	
 	/*
+	 * Find in row of matrix Test4
+	 */
+	@Test
+	public void FindInRowsTest() throws IOException
+	{
+		LatinSquare ls = new LatinSquare("Test4.txt");
+		assertEquals(ls.findInRow(0, 1), 0);
+		assertEquals(ls.findInRow(0, 2), 1);
+		assertEquals(ls.findInRow(0, 3), 2);
+		assertEquals(ls.findInRow(0, 4), -1);
+		assertEquals(ls.findInRow(2, 1), 1);
+		assertEquals(ls.findInRow(2, 2), 0);
+		assertEquals(ls.findInRow(2, 3), 2);
+		assertEquals(ls.findInRow(2, 4), -1);
+	}
+	
+	/*
+	 * Find in column of matrix Test4
+	 */
+	@Test
+	public void FindInColumnsTest() throws IOException
+	{
+		LatinSquare ls = new LatinSquare("Test4.txt");
+		assertEquals(ls.findInColumn(0, 1), 0);
+		assertEquals(ls.findInColumn(0, 2), 2);
+		assertEquals(ls.findInColumn(0, 3), -1);
+		assertEquals(ls.findInColumn(2, 1), -1);
+		assertEquals(ls.findInColumn(2, 2), 1);
+		assertEquals(ls.findInColumn(2, 3), 0);
+	}
+	
+	/*
 	 * Test0 is valid Latin square. Check all the columns and rows and
 	 * that the matrix itself is a Latin square.
 	 */

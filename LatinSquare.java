@@ -52,6 +52,24 @@ public class LatinSquare
 	}
 	
 	/*
+	 * Find the value in the row. 
+	 * Return the column where found or -1 otherwise
+	 */
+	public int findInRow(int i, int val)
+	{
+		return -1;
+	}
+	
+	/*
+	 * Find the value in the column
+	 * Return the row where found or -1 otherwise
+	 */
+	public int findInColumn(int j, int val)
+	{
+		return -1;
+	}
+	
+	/*
 	 * Check if the row is a valid for a Latin square
 	 */
 	public boolean isRowLatin(int row)
